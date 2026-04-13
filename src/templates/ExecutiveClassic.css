@@ -1,0 +1,359 @@
+.ec-root {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  background: #fff;
+  color: #1c1c1c;
+  width: 100%;
+  min-height: 297mm;
+}
+
+/* ── Header ── */
+.ec-header {
+  background: #111111;
+  padding: 36px 48px 28px;
+  position: relative;
+}
+
+.ec-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #c9a96e 0%, #e8d5a3 50%, #c9a96e 100%);
+}
+
+.ec-header-name-block {
+  margin-bottom: 20px;
+}
+
+.ec-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #f5f0e8;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.ec-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c9a96e;
+}
+
+.ec-header-divider {
+  width: 48px;
+  height: 1px;
+  background: rgba(201, 169, 110, 0.5);
+  margin-bottom: 16px;
+}
+
+.ec-contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 32px;
+}
+
+.ec-contact-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.ec-contact-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c9a96e;
+  min-width: 52px;
+}
+
+.ec-contact-value {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9.5px;
+  color: #c8c0b0;
+  letter-spacing: 0.3px;
+}
+
+/* ── Body ── */
+.ec-body {
+  padding: 32px 48px 40px;
+}
+
+/* ── Section ── */
+.ec-section {
+  margin-bottom: 22px;
+}
+
+.ec-section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e8e0d0;
+}
+
+.ec-section-ornament {
+  font-size: 7px;
+  color: #c9a96e;
+  flex-shrink: 0;
+}
+
+.ec-section-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+/* ── Summary ── */
+.ec-summary {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #3a3a3a;
+  font-style: italic;
+}
+
+/* ── Experience ── */
+.ec-exp-item {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0ece4;
+}
+
+.ec-exp-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.ec-exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 6px;
+  gap: 16px;
+}
+
+.ec-exp-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ec-exp-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.ec-exp-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1c1c1c;
+}
+
+.ec-exp-company {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #c9a96e;
+}
+
+.ec-exp-dates {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9.5px;
+  color: #888;
+}
+
+.ec-exp-location {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9px;
+  color: #aaa;
+}
+
+.ec-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 0 0;
+}
+
+.ec-bullets li {
+  font-size: 11.5px;
+  line-height: 1.7;
+  color: #3a3a3a;
+  padding-left: 14px;
+  position: relative;
+  margin-bottom: 3px;
+}
+
+.ec-bullets li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: #c9a96e;
+  font-size: 10px;
+}
+
+.ec-bullets-sm li {
+  font-size: 10.5px;
+}
+
+/* ── Two-column layout ── */
+.ec-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+}
+
+/* ── Education ── */
+.ec-edu-item {
+  margin-bottom: 14px;
+}
+
+.ec-edu-degree {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1c1c1c;
+  line-height: 1.4;
+  margin-bottom: 2px;
+}
+
+.ec-edu-institution {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  color: #555;
+  margin-bottom: 3px;
+}
+
+.ec-edu-meta {
+  display: flex;
+  gap: 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9.5px;
+  color: #888;
+}
+
+.ec-gpa {
+  color: #c9a96e;
+  font-weight: 500;
+}
+
+.ec-edu-details {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9.5px;
+  color: #888;
+  margin-top: 3px;
+  line-height: 1.5;
+}
+
+/* ── Certifications ── */
+.ec-cert-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.ec-cert-name {
+  font-size: 11px;
+  font-weight: 500;
+  color: #2a2a2a;
+}
+
+.ec-cert-meta {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9px;
+  color: #999;
+  margin-top: 1px;
+}
+
+/* ── Projects ── */
+.ec-proj-item {
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #f0ece4;
+}
+
+.ec-proj-item:last-child {
+  border-bottom: none;
+}
+
+.ec-proj-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2px;
+}
+
+.ec-proj-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1c1c1c;
+}
+
+.ec-proj-date {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9px;
+  color: #aaa;
+}
+
+.ec-proj-tech {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9.5px;
+  letter-spacing: 0.5px;
+  color: #c9a96e;
+  margin-bottom: 4px;
+}
+
+/* ── Skills ── */
+.ec-skill-group {
+  margin-bottom: 10px;
+}
+
+.ec-skill-label {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaa;
+  margin-bottom: 5px;
+}
+
+.ec-skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.ec-chip {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9px;
+  color: #2a2a2a;
+  background: #f5f1ea;
+  border: 1px solid #e0d8c8;
+  padding: 2px 8px;
+  letter-spacing: 0.3px;
+}
+
+.ec-lang {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  color: #555;
+}

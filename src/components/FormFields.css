@@ -1,0 +1,270 @@
+.ff-field {
+  margin-bottom: 14px;
+}
+
+.ff-label {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 5px;
+  letter-spacing: 0.2px;
+}
+
+.ff-hint {
+  font-size: 10.5px;
+  font-weight: 400;
+  color: #aaa;
+  margin-left: 6px;
+}
+
+.ff-input {
+  width: 100%;
+  padding: 8px 11px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  color: #1a1a1a;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  line-height: 1.4;
+}
+
+.ff-input:focus {
+  border-color: #888;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.05);
+}
+
+.ff-input::placeholder {
+  color: #ccc;
+}
+
+.ff-textarea {
+  width: 100%;
+  padding: 8px 11px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  color: #1a1a1a;
+  outline: none;
+  resize: vertical;
+  line-height: 1.6;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.ff-textarea:focus {
+  border-color: #888;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.05);
+}
+
+.ff-textarea::placeholder {
+  color: #ccc;
+}
+
+.ff-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* ── Section Card ── */
+.ff-card {
+  background: #fafafa;
+  border: 1px solid #e8e4de;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.ff-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background: #f3f0ea;
+  border-bottom: 1px solid #e8e4de;
+}
+
+.ff-card-label {
+  font-size: 11px;
+  font-weight: 500;
+  color: #666;
+  letter-spacing: 0.3px;
+}
+
+.ff-remove-btn {
+  font-size: 11px;
+  color: #c0392b;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 3px;
+  transition: background 0.15s;
+}
+
+.ff-remove-btn:hover {
+  background: rgba(192, 57, 43, 0.08);
+}
+
+.ff-card-body {
+  padding: 14px;
+}
+
+/* ── Add Button ── */
+.ff-add-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: 100%;
+  padding: 9px 14px;
+  background: transparent;
+  border: 1.5px dashed #d0ccc4;
+  border-radius: 6px;
+  color: #888;
+  font-size: 12.5px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+  margin-top: 4px;
+}
+
+.ff-add-btn:hover {
+  border-color: #999;
+  color: #444;
+  background: #f8f6f2;
+}
+
+.ff-add-icon {
+  font-size: 16px;
+  line-height: 1;
+  color: #aaa;
+}
+
+/* ── Bullet Editor ── */
+.ff-bullets-editor {
+  margin-bottom: 4px;
+}
+
+.ff-bullet-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 7px;
+}
+
+.ff-bullet-icon {
+  font-size: 12px;
+  color: #bbb;
+  flex-shrink: 0;
+  width: 12px;
+  text-align: center;
+}
+
+.ff-bullet-input {
+  flex: 1;
+  margin-bottom: 0 !important;
+}
+
+.ff-bullet-remove {
+  background: none;
+  border: none;
+  color: #ccc;
+  cursor: pointer;
+  font-size: 11px;
+  padding: 4px;
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+
+.ff-bullet-remove:hover {
+  color: #c0392b;
+}
+
+.ff-bullet-add {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 11.5px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  padding: 4px 0;
+  margin-top: 2px;
+  transition: color 0.15s;
+}
+
+.ff-bullet-add:hover {
+  color: #555;
+}
+
+/* ── Tag Input ── */
+.ff-tag-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 7px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  min-height: 40px;
+  align-items: center;
+  cursor: text;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.ff-tag-box:focus-within {
+  border-color: #888;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.05);
+}
+
+.ff-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #111;
+  color: #f0ede8;
+  font-size: 11px;
+  padding: 3px 9px 3px 10px;
+  border-radius: 3px;
+}
+
+.ff-tag-remove {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  font-size: 10px;
+  padding: 0;
+  line-height: 1;
+  transition: color 0.12s;
+}
+
+.ff-tag-remove:hover {
+  color: #fff;
+}
+
+.ff-tag-input {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  color: #1a1a1a;
+  min-width: 120px;
+  flex: 1;
+  background: transparent;
+  padding: 1px 0;
+}
+
+.ff-tag-input::placeholder {
+  color: #ccc;
+}
+
+.ff-tag-hint {
+  font-size: 10px;
+  color: #ccc;
+  margin-top: 4px;
+}

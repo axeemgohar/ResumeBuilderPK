@@ -1,0 +1,483 @@
+.rb-root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f0ede8;
+  overflow: hidden;
+}
+
+/* ── Navbar ── */
+.rb-nav {
+  height: 52px;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  flex-shrink: 0;
+  gap: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.rb-nav-left {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-shrink: 0;
+}
+
+.rb-back-btn {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition:
+    color 0.15s,
+    background 0.15s;
+  white-space: nowrap;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.rb-back-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.rb-nav-divider {
+  display: block;
+  width: 1px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0 12px;
+}
+
+.rb-nav-logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.rb-logo-dot {
+  color: #c9a96e;
+}
+
+/* ── Template switcher ── */
+.rb-template-switcher {
+  display: flex;
+  gap: 4px;
+  flex: 1;
+  justify-content: center;
+  overflow-x: auto;
+  padding: 0 8px;
+}
+
+.rb-tpl-btn {
+  background: none;
+  border: 1px solid transparent;
+  color: #666;
+  font-size: 11.5px;
+  font-family: 'DM Sans', sans-serif;
+  padding: 5px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+
+.rb-tpl-btn:hover {
+  color: #ccc;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.rb-tpl-btn-active {
+  color: #c9a96e !important;
+  border-color: rgba(201, 169, 110, 0.35) !important;
+  background: rgba(201, 169, 110, 0.08) !important;
+}
+
+/* ── Nav right ── */
+.rb-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.rb-preview-toggle {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #aaa;
+  font-size: 11.5px;
+  font-family: 'DM Sans', sans-serif;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s;
+  display: none; /* shown on mobile via media query */
+}
+
+.rb-preview-toggle:hover {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.rb-pay-btn {
+  background: #c9a96e;
+  border: none;
+  color: #111;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+  padding: 7px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+  letter-spacing: 0.2px;
+  flex-shrink: 0;
+}
+
+.rb-pay-btn:hover {
+  background: #dfc18e;
+}
+
+/* ── Body (split layout) ── */
+.rb-body {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  min-height: 0;
+}
+
+/* ── Form panel ── */
+.rb-form-panel {
+  width: 380px;
+  min-width: 320px;
+  flex-shrink: 0;
+  background: #fff;
+  border-right: 1px solid #e8e4de;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* ── Step tabs ── */
+.rb-steps {
+  display: flex;
+  border-bottom: 1px solid #f0ece4;
+  overflow-x: auto;
+  flex-shrink: 0;
+  background: #faf8f5;
+}
+
+.rb-step-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding: 10px 14px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  flex: 1;
+  min-width: 60px;
+  transition: all 0.15s;
+}
+
+.rb-step-btn:hover {
+  background: #f5f2ed;
+}
+
+.rb-step-active {
+  border-bottom-color: #111 !important;
+  background: #fff !important;
+}
+
+.rb-step-done .rb-step-icon {
+  color: #2a6e3f !important;
+}
+
+.rb-step-icon {
+  font-size: 13px;
+  color: #ccc;
+  line-height: 1;
+}
+
+.rb-step-active .rb-step-icon {
+  color: #111;
+}
+
+.rb-step-label {
+  font-size: 10px;
+  font-weight: 500;
+  color: #aaa;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+.rb-step-active .rb-step-label {
+  color: #111;
+}
+
+.rb-step-done .rb-step-label {
+  color: #2a6e3f;
+}
+
+/* ── Form scroll area ── */
+.rb-form-scroll {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.rb-form-content {
+  padding: 20px 20px 24px;
+}
+
+.rb-step-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0ece4;
+}
+
+/* ── Form footer ── */
+.rb-form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-top: 1px solid #f0ece4;
+  background: #faf8f5;
+  flex-shrink: 0;
+}
+
+.rb-step-progress {
+  display: flex;
+  gap: 5px;
+}
+
+.rb-progress-dot {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #e0dcd5;
+  transition: background 0.2s;
+}
+
+.rb-progress-dot-active {
+  background: #111;
+}
+
+.rb-progress-dot-done {
+  background: #2a6e3f;
+}
+
+.rb-nav-btn {
+  font-size: 12.5px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.15s;
+  border: none;
+}
+
+.rb-nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.rb-nav-btn-secondary {
+  background: transparent;
+  border: 1px solid #ddd;
+  color: #666;
+}
+
+.rb-nav-btn-secondary:hover:not(:disabled) {
+  background: #f5f2ed;
+  border-color: #bbb;
+}
+
+.rb-nav-btn-primary {
+  background: #111;
+  color: #fff;
+}
+
+.rb-nav-btn-primary:hover {
+  background: #333;
+}
+
+.rb-nav-btn-pay {
+  background: #c9a96e;
+  color: #111;
+  font-weight: 600;
+}
+
+.rb-nav-btn-pay:hover {
+  background: #dfc18e;
+}
+
+/* ── Preview panel ── */
+.rb-preview-panel {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.rb-preview-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px 32px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rb-preview-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  align-self: flex-start;
+}
+
+.rb-preview-label span:first-child {
+  font-size: 12px;
+  font-weight: 500;
+  color: #555;
+}
+
+.rb-preview-label-tag {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #aaa;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+.rb-paper-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Scale the resume paper to fit inside the preview panel */
+.rb-paper-wrap .resume-paper {
+  transform-origin: top center;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .rb-template-switcher {
+    display: none;
+  }
+
+  .rb-preview-toggle {
+    display: block;
+  }
+
+  .rb-form-panel {
+    width: 100%;
+    position: absolute;
+    inset: 52px 0 0 0;
+    z-index: 10;
+  }
+
+  .rb-form-panel-hidden {
+    transform: translateX(-100%);
+  }
+
+  .rb-preview-panel {
+    position: absolute;
+    inset: 52px 0 0 0;
+  }
+
+  .rb-preview-panel-full {
+    z-index: 11;
+  }
+}
+
+@media (min-width: 901px) {
+  .rb-form-panel-hidden {
+    /* no hiding on desktop */
+  }
+}
+
+/* ── Mobile nav tweaks ── */
+@media (max-width: 500px) {
+  .rb-nav {
+    padding: 0 10px;
+    gap: 6px;
+  }
+
+  .rb-nav-logo {
+    font-size: 11px;
+  }
+
+  .rb-back-btn {
+    font-size: 11px;
+    padding: 6px 6px;
+  }
+
+  .rb-nav-divider {
+    margin: 0 6px;
+  }
+
+  .rb-pay-btn {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+}
+
+/* ── Preview padding on mobile ── */
+@media (max-width: 900px) {
+  .rb-preview-scroll {
+    padding: 16px 8px 32px;
+  }
+}
+
+/* ── Restored data banner ── */
+.rb-restored-banner {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0d1f1a;
+  color: #d1fae5;
+  font-size: 12.5px;
+  font-weight: 500;
+  padding: 10px 22px;
+  border-radius: 6px;
+  z-index: 200;
+  white-space: nowrap;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  animation: rb-banner-in 0.3s ease;
+}
+
+@keyframes rb-banner-in {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}

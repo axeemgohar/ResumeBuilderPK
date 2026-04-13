@@ -1,0 +1,466 @@
+.bi-root {
+  font-family: 'Space Grotesk', 'DM Sans', sans-serif;
+  background: #fff;
+  color: #1a1a1a;
+  width: 100%;
+  min-height: 297mm;
+}
+
+/* ── Header ── */
+.bi-header {
+  background: #0d1f1a;
+  position: relative;
+  overflow: hidden;
+}
+
+.bi-header-inner {
+  position: relative;
+}
+
+.bi-header-geo {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 220px;
+  height: 220px;
+  border: 40px solid rgba(20, 184, 140, 0.12);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.bi-header-content {
+  position: relative;
+  z-index: 1;
+  padding: 36px 44px 32px;
+}
+
+.bi-name-block {
+  margin-bottom: 20px;
+}
+
+.bi-name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.bi-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bi-title-line {
+  display: block;
+  height: 1px;
+  width: 24px;
+  background: #14b88c;
+  flex-shrink: 0;
+}
+
+.bi-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 10.5px;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #14b88c;
+}
+
+.bi-contact-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.bi-contact-chip {
+  font-size: 9px;
+  color: #94a3b8;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 4px 10px;
+  letter-spacing: 0.3px;
+}
+
+/* ── Summary stripe ── */
+.bi-summary-stripe {
+  background: #f0fdf8;
+  border-left: 4px solid #14b88c;
+  padding: 14px 44px 14px 40px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.bi-summary-label {
+  font-size: 7.5px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #14b88c;
+  margin-top: 3px;
+  flex-shrink: 0;
+  width: 44px;
+}
+
+.bi-summary-text {
+  font-size: 11px;
+  line-height: 1.75;
+  color: #2d4a3e;
+}
+
+/* ── Body ── */
+.bi-body {
+  /* no padding here, handled per-section */
+}
+
+.bi-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 228px;
+  gap: 0;
+  padding: 0 0 40px;
+}
+
+/* ── Main ── */
+.bi-main {
+  padding: 24px 28px 0 44px;
+  border-right: 1px solid #f0f0f0;
+}
+
+/* ── Section ── */
+.bi-section {
+  margin-bottom: 22px;
+}
+
+.bi-section-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #0d1f1a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #0d1f1a;
+}
+
+.bi-section-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  color: #14b88c;
+  letter-spacing: 0;
+}
+
+/* ── Experience ── */
+.bi-exp-item {
+  display: flex;
+  gap: 0;
+  margin-bottom: 16px;
+}
+
+.bi-exp-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20px;
+  flex-shrink: 0;
+  margin-right: 12px;
+}
+
+.bi-timeline-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #14b88c;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.bi-timeline-line {
+  width: 1px;
+  flex: 1;
+  background: #d1fae5;
+  margin-top: 4px;
+  min-height: 20px;
+}
+
+.bi-exp-card {
+  flex: 1;
+  padding-bottom: 14px;
+}
+
+.bi-exp-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.bi-exp-title {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #0d1f1a;
+  margin-bottom: 2px;
+}
+
+.bi-exp-company {
+  font-size: 10px;
+  font-weight: 600;
+  color: #14b88c;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.bi-exp-meta-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.bi-exp-dates {
+  font-size: 9.5px;
+  color: #888;
+  white-space: nowrap;
+}
+
+.bi-exp-loc {
+  font-size: 9px;
+  color: #bbb;
+}
+
+.bi-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 0;
+}
+
+.bi-bullets li {
+  font-size: 10.5px;
+  line-height: 1.7;
+  color: #3a3a3a;
+  padding-left: 13px;
+  position: relative;
+  margin-bottom: 3px;
+}
+
+.bi-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #14b88c;
+}
+
+.bi-bullets-sm li {
+  font-size: 10px;
+}
+
+/* ── Projects ── */
+.bi-proj-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.bi-proj-card {
+  border: 1px solid #e8f5f1;
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+}
+
+.bi-proj-accent {
+  width: 4px;
+  background: #14b88c;
+  flex-shrink: 0;
+}
+
+.bi-proj-body {
+  padding: 10px 12px;
+  flex: 1;
+}
+
+.bi-proj-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 3px;
+}
+
+.bi-proj-name {
+  font-size: 11px;
+  font-weight: 600;
+  color: #0d1f1a;
+}
+
+.bi-proj-date {
+  font-size: 8.5px;
+  color: #bbb;
+}
+
+.bi-proj-tech {
+  display: block;
+  font-size: 9px;
+  color: #14b88c;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* ── Aside ── */
+.bi-aside {
+  padding: 24px 20px 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.bi-aside-card {
+  margin-bottom: 20px;
+}
+
+.bi-aside-heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #0d1f1a;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #0d1f1a;
+}
+
+/* ── Education ── */
+.bi-aside-edu {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0f5f2;
+}
+
+.bi-aside-edu:last-child {
+  border-bottom: none;
+}
+
+.bi-edu-degree {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: #0d1f1a;
+  line-height: 1.4;
+  margin-bottom: 2px;
+}
+
+.bi-edu-inst {
+  font-size: 9px;
+  color: #555;
+  margin-bottom: 3px;
+  line-height: 1.4;
+}
+
+.bi-edu-meta {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bi-edu-meta span {
+  font-size: 8.5px;
+  color: #aaa;
+}
+
+.bi-gpa {
+  color: #14b88c !important;
+  font-weight: 600 !important;
+}
+
+.bi-edu-details {
+  font-size: 8.5px;
+  color: #aaa;
+  margin-top: 3px;
+  line-height: 1.5;
+}
+
+/* ── Skills ── */
+.bi-skill-section {
+  margin-bottom: 10px;
+}
+
+.bi-skill-cat {
+  display: block;
+  font-size: 7.5px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+.bi-skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.bi-tag {
+  font-size: 8.5px;
+  padding: 2px 7px;
+  background: #0d1f1a;
+  color: #d1fae5;
+  letter-spacing: 0.2px;
+}
+
+.bi-tag-outline {
+  background: transparent;
+  color: #0d1f1a;
+  border: 1px solid #c8ded6;
+}
+
+.bi-lang {
+  font-size: 10px;
+  color: #555;
+}
+
+/* ── Certifications ── */
+.bi-cert {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin-bottom: 9px;
+}
+
+.bi-cert-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #14b88c;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.bi-cert-name {
+  font-size: 9.5px;
+  font-weight: 500;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+.bi-cert-meta {
+  font-size: 8.5px;
+  color: #aaa;
+  margin-top: 1px;
+}

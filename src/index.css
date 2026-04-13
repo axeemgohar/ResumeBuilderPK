@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --app-bg: #f0ede8;
+  --sidebar-bg: #1a1a1a;
+  --sidebar-text: #e8e5e0;
+  --sidebar-muted: #888;
+  --sidebar-border: rgba(255, 255, 255, 0.08);
+  --accent: #c9a96e;
+  --accent-hover: #dfc18e;
+  --paper-shadow: 0 8px 48px rgba(0, 0, 0, 0.18), 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--app-bg);
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 2px;
+}
+
+/* Resume paper — A4 dimensions, scaled via JS in each context */
+.resume-paper {
+  width: 794px; /* 210mm at 96dpi */
+  min-height: 1123px; /* 297mm at 96dpi */
+  background: #fff;
+  box-shadow: var(--paper-shadow);
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  transform-origin: top center;
+}

@@ -1,0 +1,374 @@
+.gallery-root {
+  min-height: 100vh;
+  background: #f5f2ed;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ── */
+.gallery-header {
+  background: #111;
+  padding: 0;
+}
+
+.gallery-header-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 32px 48px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.gallery-logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.gallery-logo-dot {
+  color: #c9a96e;
+}
+
+.gallery-header-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.gallery-headline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #f5f0e8;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  line-height: 1.1;
+}
+
+.gallery-subline {
+  font-size: 11.5px;
+  color: #888;
+  line-height: 1.65;
+  max-width: 560px;
+}
+
+.gallery-price-badge {
+  background: rgba(201, 169, 110, 0.12);
+  border: 1px solid rgba(201, 169, 110, 0.3);
+  padding: 14px 22px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.gallery-price-amount {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #c9a96e;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.gallery-price-label {
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888;
+}
+
+/* ── Grid ── */
+.gallery-grid-wrap {
+  flex: 1;
+  padding: 48px;
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-grid-wrap {
+    padding: 24px;
+  }
+  .gallery-header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 16px;
+  }
+}
+
+/* ── Card ── */
+.gallery-card {
+  background: #fff;
+  border: 1px solid #e8e3da;
+  overflow: hidden;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.gallery-card-hovered {
+  box-shadow: 0 12px 48px rgba(0,0,0,0.14);
+  transform: translateY(-2px);
+}
+
+/* ── Preview thumbnail ── */
+.gallery-card-preview {
+  height: 360px;
+  overflow: hidden;
+  position: relative;
+  background: #f0ede8;
+  cursor: pointer;
+}
+
+.gallery-preview-scale-wrap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(0.42);
+  transform-origin: top center;
+  width: 210mm;
+  pointer-events: none;
+}
+
+.gallery-thumb-paper {
+  box-shadow: none !important;
+}
+
+.gallery-preview-hover-label {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.gallery-card-hovered .gallery-preview-hover-label {
+  background: rgba(0,0,0,0.3);
+}
+
+.gallery-preview-hover-label span {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  padding: 8px 18px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  backdrop-filter: blur(4px);
+}
+
+.gallery-card-hovered .gallery-preview-hover-label span {
+  opacity: 1;
+}
+
+/* ── Card info ── */
+.gallery-card-info {
+  padding: 20px 24px 20px;
+}
+
+.gallery-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.gallery-card-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 2px;
+}
+
+.gallery-card-tagline {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.gallery-palette {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.gallery-palette-swatch {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.gallery-card-desc {
+  font-size: 11.5px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.gallery-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  border-top: 1px solid #f0ece4;
+}
+
+.gallery-best-for {
+  font-size: 10px;
+  color: #999;
+}
+
+.gallery-best-for strong {
+  color: #555;
+  font-weight: 500;
+}
+
+.gallery-card-cta {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 9px 20px;
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.gallery-card-cta:hover {
+  background: #333;
+}
+
+/* ── Overlay ── */
+.gallery-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  z-index: 1000;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.gallery-overlay-inner {
+  background: #f5f2ed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.gallery-overlay-toolbar {
+  background: #111;
+  padding: 14px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 16px;
+}
+
+.gallery-overlay-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #f5f0e8;
+  margin-right: 12px;
+}
+
+.gallery-overlay-tag {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.gallery-overlay-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.gallery-btn-select {
+  background: #c9a96e;
+  color: #111;
+  border: none;
+  padding: 9px 22px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.gallery-btn-select:hover {
+  background: #dfc18e;
+}
+
+.gallery-btn-close {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #aaa;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.15s;
+}
+
+.gallery-btn-close:hover {
+  color: #fff;
+}
+
+.gallery-overlay-paper-wrap {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+  background: #e8e4dd;
+}
+
+/* ── Footer ── */
+.gallery-footer {
+  background: #111;
+  padding: 16px 48px;
+}
+
+.gallery-footer-features {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-feature {
+  font-size: 11px;
+  color: #888;
+  letter-spacing: 0.3px;
+}
