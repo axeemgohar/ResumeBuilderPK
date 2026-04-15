@@ -64,7 +64,7 @@ export default function TemplateGallery({ onSelect }) {
               ResumeBuilder<span className="gallery-logo-dot"></span>PK
             </div>
             <div className="gallery-price-badge">
-              <span className="gallery-price-amount">Rs. 150</span>
+              <span className="gallery-price-amount">Rs. 100</span>
               <span className="gallery-price-label">one-time</span>
             </div>
           </div>
@@ -151,7 +151,7 @@ export default function TemplateGallery({ onSelect }) {
           <span className="gallery-feature">
             ✓ Delivered to WhatsApp or Email
           </span>
-          <span className="gallery-feature">✓ Pay only Rs. 150 — once</span>
+          <span className="gallery-feature">✓ Pay only Rs. 100 — once</span>
         </div>
       </footer>
     </div>

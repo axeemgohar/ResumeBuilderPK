@@ -20,7 +20,7 @@ const CONFIG = {
   ACCOUNT_NAME: 'Muhammad Azeem Gohar',
 
   // 4. Price displayed to the user
-  PRICE: 'Rs. 150',
+  PRICE: 'Rs. 100',
 
   // 5. Your WhatsApp number (format: 92XXXXXXXXXX — no + or dashes)
   WHATSAPP_NUMBER: '923099870810',

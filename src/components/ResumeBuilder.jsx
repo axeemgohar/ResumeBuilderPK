@@ -139,7 +139,7 @@ export default function ResumeBuilder({ templateId, onBack, onPay }) {
             className="rb-pay-btn"
             onClick={() => onPay(data, activeTemplateId)}
           >
-            Download • Rs. 150
+            Download • Rs. 100
           </button>
         </div>
       </nav>
